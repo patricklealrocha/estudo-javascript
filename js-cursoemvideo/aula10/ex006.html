@@ -16,20 +16,24 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseout = 'sair()'onmouseenter = 'entrar()'>
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseenter = "entrar()" >
         Interaja...
     </div>
     <script>
-        function clicar(){
             var a = window.document.getElementById('area')
+        function clicar(){
+        
             a.innerText = 'Clicou!'
         }
-        function entrar(){
-            a.innerText = 'Entrou!'
-        }
+       function entrar()
+       {
+           a.innerText = 'Entrou!'
+       }
+       
         function sair(){
-            a.innerText = 'Saiu!'
+            a.innerText = 'saiu!'
         }
+        
     </script>
 </body>
 </html>
