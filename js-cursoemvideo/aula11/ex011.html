@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de imigração</h1>
+    Você reside em qual país : <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificação" onclick="verificar()">
+    <div id="pais">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtp = window.document.querySelector('input#txtpais')
+            var pais = window.document.querySelector('div#pais')
+            pais.innerHTML=`<p>Você reside no ${txtp.value}</p>`
+            if(txtp == 'Brasil'){
+                pais.innerHTML +=`<p>Você é Brasileiro!!</p>`
+            }else{
+                pais.innerHTML +=`<p>Você é Estrangeiro</p>`
+            }
+            pais.innerHTML +=`<p>Você é bem-vindo em nosso país se cumprir com a legislação!</p>`
+
+        }
+    </script>
+    
+</body>
+</html>
