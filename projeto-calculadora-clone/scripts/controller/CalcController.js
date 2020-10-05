@@ -16,6 +16,27 @@ class CalcController {
         this.initKeyboard();
         
     }
+    pasteFromClipboard(){
+        document.addEventListener('paste', e =>{
+
+            let text = e.clipboardData.getData('Text');
+
+            this.displayCalc = Number(text);
+        });
+    }
+    copyToClipboard(){
+        let input = document.createElement('input');
+
+        input.value = this.displayCalc;
+        document.body.appendChild(input);
+
+        input.select();
+
+        document.execCommand("Copy");
+
+        input.remove();
+    }
+
     // método principal do projeto
     initialize(){
 
@@ -26,6 +47,7 @@ class CalcController {
         }, 1000);
         
         this.setLastNumberToDisplay();
+        this.pasteFromClipboard();
     }
     // eventos de teclado
     initKeyboard(){
