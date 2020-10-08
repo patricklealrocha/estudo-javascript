@@ -1,0 +1,23 @@
+body{
+    background: rgb(102, 99, 98);
+}
+header{
+    color: darkblue;
+    text-align: center;
+}
+section{
+    background: rgb(20, 4, 80);
+    width: 300pt;
+    height: 100pt;;
+    padding: 20px;
+    margin: auto;
+}
+p{
+    color: cyan;
+}
+div#resultado{
+    margin-top: 20px;
+    text-align: center;
+    color: darkgrey;
+    font-size: 20px;
+}

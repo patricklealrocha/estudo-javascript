@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de aluno</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calcular média de dois números</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+            Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+        </p>
+        <ol>
+           <li> A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;</li>
+           <li> A mensagem "Reprovado", se a média for menor do que sete;</li>
+           <li> A mensagem "Aprovado com Distinção", se a média for igual a dez.</li>
+        </ol>
+        <hr>
+      </div>
+      <div id="resolucao">
+          <p> Digite a sua nota 1 : <input type="number" name="n1" id="n1">
+              
+          </p>
+          <p> Digite a sua nota 2 : <input type="number" name="n2" id="n2">
+
+          </p>
+          <input type="button" value="media" onclick="media()">
+          <hr>
+      </div>
+      <div id="res">
+
+      </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="calculo.js"></script>
+</body>
+</html>

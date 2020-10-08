@@ -1,0 +1,16 @@
+body{
+    background: black;
+}
+header{
+    color: blanchedalmond;
+    text-align: center;
+}
+section{
+    background: chocolate;
+    width: 500pt;
+    padding: 10pt;
+    margin: auto;
+}
+div#res{
+    text-align: center;
+}

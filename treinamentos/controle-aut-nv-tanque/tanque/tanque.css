@@ -1,0 +1,106 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 1478px;
+    height: 970px;
+}
+.display{
+    width: 500px;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: #FFF;
+    line-height: 40px;
+    top: 169px;
+    left: 916px;
+}
+
+.tanque{
+    z-index: 1000;
+}
+
+
+
+
+.saida{
+    position: absolute;
+    top: 854px;
+    left: 641px;
+    width: 29px;
+    display: none;
+}
+
+.btnentrada{
+    position: absolute;
+    top: 234px;
+    left: 87px;
+}
+
+.btnsaida{
+    position: absolute;
+    top: 815px;
+    left: 542px;
+}
+
+
+.btnplay, .btncontinue, .btnpause{
+    position:absolute;
+    top: 287px;
+    left: 893px; 
+}
+
+.btnrestart{
+    position:absolute;
+    top: 287px;
+    left: 1198px; 
+}
+
+.btnplay:hover, .btnpause:hover, .btnrestart:hover{
+    cursor: pointer;
+}
+
+.btncontinue, .btnpause{
+    display: none;
+}
+
+
+.btnsaida:hover, .btnentrada:hover{
+    cursor: pointer;
+}
+
+.s1, .s2, .s3, .s4{
+    width: 10px;
+    height: 10px;
+    background: #0e0e0e;
+    position: absolute;
+    left: 744px;
+    top: 171px;
+}
+
+.s2{top: 365px;}
+.s3{top: 559px;}
+.s4{top: 754px;}
+
+.entrada{
+    position:absolute;
+    top: 165px;
+    left: 253px;
+    z-index:-1000;
+    display: none;
+}
+.btnsaida{
+    position: absolute;
+    top: 815px;
+    left: 542px;
+}
+
+.agua{
+    z-index:-1000;
+    width:504px;
+    background-color: #00bff3;
+    float:right;
+    position:absolute;
+    top: 795px;
+    left: 210px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn">
+        <button id="btnCreator">Criar quadrado</button>
+        <hr>
+    </div>
+    <div class="creation"  >
+        
+    </div>    
+    <script>
+        
+        var buttonCreator = document.querySelector('#btnCreator')
+        var result = document.querySelector('.creation')
+        var newcolor = getRandomColor();
+       
+           
+        
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = "#";
+            for(var i = 0; i < 6; i++){
+                color += letters[Math.floor(Math.random()* 16)];
+            }
+            return color;
+        }
+        function createSquare() {
+           
+        var createForm = document.createElement('div');
+        createForm.setAttribute('class','quadrado');
+        result.appendChild(createForm);
+            
+        createForm.style.width = '100px';
+        createForm.style.height = '100px';
+        createForm.style.backgroundColor = 'red';
+        createForm.style.border = 'solid';
+        }
+        function trocar(){
+            var changeColor = document.querySelector('.quadrado');
+            changeColor.onmouseover = function(){
+            changeColor.style.backgroundColor = getRandomColor() ;
+            }
+        }
+
+        buttonCreator.onclick = function() {
+            createSquare();
+            trocar();            
+        }
+
+    </script>
+</body>
+</html>
