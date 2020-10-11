@@ -40,7 +40,8 @@
         createForm.style.backgroundColor = 'red';
         createForm.style.border = 'solid';
         }
-        function trocar(){
+        function change(){
+            
             var changeColor = document.querySelector('.quadrado');
             changeColor.onmouseover = function(){
             changeColor.style.backgroundColor = getRandomColor() ;
@@ -49,7 +50,7 @@
 
         buttonCreator.onclick = function() {
             createSquare();
-            trocar();            
+            change();            
         }
 
     </script>
